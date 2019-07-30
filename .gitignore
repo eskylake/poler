@@ -1,0 +1,6 @@
+### Composer ###
+composer.phar
+/vendor/
+
+# env
+env.php
