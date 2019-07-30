@@ -1,4 +1,4 @@
-# GuestBook
+# Poler
 
 This is a simple PHP model-view-controller (MVC) framework with user authentication.
 
@@ -7,7 +7,7 @@ This is a simple PHP model-view-controller (MVC) framework with user authenticat
 Download the project or clone it:
 
 ```git
-git clone git@gitlab.com:Tavafi/guestbook.git
+git clone git@github.com:Tavafi/poler.git
 ```
 
 Instructs composer to create autoloader:
