@@ -42,6 +42,8 @@ class Autoload
      * If the file is not founded, the default controller will be loaded.
      * 
      * @param string $className the classs name to be loaded.
+     * 
+     * @return void
      */
     public static function loader(string $className)
     {
@@ -79,6 +81,8 @@ class Autoload
      * Check if the method exists in the controller class or not. If the method is defined, its name will be stored in method property.
      * Get all the parameter values from url and pass them to the method.
      * Call the requested method with requested parameters.
+     * 
+     * @return void
      */
     public function run()
     {
