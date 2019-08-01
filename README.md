@@ -99,7 +99,6 @@ class Example extends Model
             ],
         ];
     }
-
 }
 ```
 
