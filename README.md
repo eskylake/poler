@@ -77,7 +77,7 @@ There are some predefined type validation rules in the base model class that are
 | **unique**    | Value is unique in model's table                      |
 
 #### Usage
-All you need is to define the `rules` method in your model class that it has to return an array of rules. Each key of this array specifies the rule name that it contains an array of attributes to be validated.
+All you need is to define the `rules()` method in your model class that it has to return an array of rules. Each key of this array specifies the rule name that it contains an array of attributes to be validated.
 
 
 For example the example class has two attributes, username and password that are `string` and `required`:
@@ -103,5 +103,8 @@ class Example extends Model
 }
 ```
 
+
+
+Readme is not complete yet...
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
