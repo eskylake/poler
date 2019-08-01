@@ -66,7 +66,7 @@ protected $table = "example";
 ```
 
 ### Validation rules
-There are some predefined type validation rules in the base model class that are listed below. You can add additional types as you want.
+There are some predefined validation rules in the base model class that are listed below. You can add additional types as you want.
 
 | Rules         | Definition                                            | 
 |:-------------:|:-----------------------------------------------------:|
