@@ -19,10 +19,10 @@ Import `User.sql` into your database:
 ```mysql
 mysql -u root -p -h localhost YourDataBase < User.sql
 ```
-All of the environment variable options are in `env.example.php` file.
-Copy `env.example.php` to `env.php`:
+All of the environment variable options are in `env.php.example` file.
+Copy `env.php.example` to `env.php`:
 ```bash
-cp env.example.php env.php
+cp env.php.example env.php
 ```
 You can add additional options to `$variables` array as you want. Edit `DB_` values in order to connecting to database:
 
