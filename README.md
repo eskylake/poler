@@ -4,7 +4,7 @@ This is a simple PHP model-view-controller (MVC) framework with user authenticat
 
 ## Installation
 
-Download the project or clone it:
+Download or clone the project:
 
 ```git
 git clone git@github.com:Tavafi/poler.git
