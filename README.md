@@ -159,7 +159,7 @@ class ExampleController extends Controller
 ```
 As you can see you can specify which layout must be loaded for all methods inside the controller by defining `$layout` property.
 
-There are two useful methods that you can call in your controllers, `redirect()` and `render()`.
+There are two useful methods that you can call in your controllers, `redirect()` and `render()`:
 
 #### redirect()
 This method redirects to a specific URL route. All you have to do is that to pass the route as the first argument of this method.
