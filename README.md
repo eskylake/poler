@@ -227,6 +227,7 @@ This method apply a condition to the query. It has three main parameters:
 For example:
 ```php
 (new \App\models\Example)->where('username', '=', 'AliTavafi')
+    ->where('age', '=', 21)
     ->select()
     ->one();
 ```
