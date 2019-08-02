@@ -141,8 +141,8 @@ All of the front codes must be written here :)
 Create your controller classes in `controllers/` directory. You must inherit from `\App\core\Controller` base class that it contains some useful methods such as `redirect()` and `render()`.
 
 There are two steps needed to create a controller:
-* Choose a name for your class :) e.g. `Example`
-* Concatenate it with `Controller` keyword
+1. Choose a name for your class :) e.g. `Example`
+2. Concatenate it with `Controller` keyword
 
 
 Now we have `ExampleController` class. It looks like:
@@ -158,5 +158,36 @@ class ExampleController extends Controller
 }
 ```
 As you can see you can specify which layout must be loaded for all methods inside the controller by defining `$layout` property.
+
+There are two useful methods that you have call in your controllers, `redirect()` and `render()`.
+
+#### redirect()
+This method redirects to a specific URL route. All you have to do is that to pass the route as the first argument of this method.
+
+For example in our example class we have an index method that redirects to `/home/index`:
+```php
+public function index()
+{
+    $this->redirect('/home/index');
+}
+```
+#### render()
+This method renders a specific view. It accepts two parameters:
+1. View file name
+2. Array of data you need in the view
+
+For example in our example class we have a hello method that renders `example/hello.php` view file whit Hello World message:
+```php
+public function hello()
+{
+    $this->render('example/hello', [
+        'message' => 'Hello World'
+    ]);
+}
+```
+It will fill the `$data` variable with the array you have passed to the view. Now you can access to the `message` just like this:
+```php
+<?= $data['message'] ?>
+```
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
