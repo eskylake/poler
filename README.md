@@ -116,7 +116,8 @@ It looks like:
 namespace App\views\example;
 ?>
 
-// All og the front codes must be written here :)
+// All of the front codes must be written here :)
 ```
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
