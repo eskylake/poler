@@ -222,7 +222,7 @@ It will fill the `$data` variable with the array you have passed to the view. No
 There are some simple query methods that you have access into your models if your model extends `\App\core\Model` base class.
 
 #### create()
-This method creates new record for specific data passed as the first argument to this method. For example:
+This method creates new record with specific data passed as the first argument to this method. For example:
 ```php
 (new \App\models\Example)->create([
     'username' => 'AliTavafi',
