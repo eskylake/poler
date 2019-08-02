@@ -217,5 +217,17 @@ Or
 ```php
 (new \App\models\Example)->select()->all();
 ```
+#### where()
+This method apply a condition to the query. It has three main parameters:
+```php
+->where(column, operator, value);
+```
+For example:
+```php
+(new \App\models\Example)->where('username', '=', 'AliTavafi')
+    ->select()
+    ->one();
+```
+It will return the first record of the example table with 'AliTavafi' username.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
