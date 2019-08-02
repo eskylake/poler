@@ -206,10 +206,10 @@ This method creates new record for specific data passed as the first argument to
 This method select all or specific columns from the table. You can pass the array of columns you want as the first argument.
 
 #### one()
-This method gets and returns only one record.
+This method returns only one record.
 
 #### all()
-This method gets and returns all records.
+This method returns all records.
 
 For example:
 ```php
@@ -259,5 +259,30 @@ For example:
     ->select()
     ->all();
 ```
+
+There are two other methods that simplifies the select queries:
+#### getByColumn()
+This method returns only one record with specific condition. It has three main parameters:
+```php
+->getByColumn(column, value, order type); // Default order type is 'ASC'
+```
+
+For example:
+```php
+(new \App\models\Example)->getByColumn('age', 21, 'DESC');
+```
+It will sort the records descending and return the first record with age 21.
+
+#### getAllByColumn()
+This method returns all records with specific condition. It has three main parameters:
+```php
+->getAllByColumn(column, value, order type); // Default order type is 'ASC'
+```
+
+For example:
+```php
+(new \App\models\Example)->getAllByColumn('age', 21, 'DESC');
+```
+It will sort the records descending and return all records with age 21.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
