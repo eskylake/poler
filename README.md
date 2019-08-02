@@ -46,7 +46,7 @@ Configure your web server's document / web root to be the  `public` directory. T
 The main directory of the application is `app` with predefined structure.
 
 ## Models
-Define your model classes in this directory. You must inherit from `\App\core\Model` base class in order to validate or sanitize data, connect to database etc.
+Create your model classes in `models/` directory. You must inherit from `\App\core\Model` base class in order to validate or sanitize data, connect to database etc.
 
 For example:
 ```php
@@ -101,9 +101,24 @@ class Example extends Model
     }
 }
 ```
+## Views
+Create your own view files under the `views/` directory. It is better to have separated directories for each of your controller classes, but there is no compulsion for this. All you have to do is that to create a `.php` file, e.g. `example.php`, with specific namespace and all the rest of your front codes.
 
+For example we need a view file for our example class, we create the `example.php` file under the `example` directory:
+```bash
+app/views
+└── example
+    └── example.php
+```
+It looks like:
+```php
+<?php
+namespace App\views\example;
+?>
 
-
-Readme is not complete yet...
+// All front codes must be written here :)
+```
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
