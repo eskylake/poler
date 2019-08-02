@@ -226,7 +226,7 @@ This method creates new record with specific data passed as the first argument t
 ```php
 (new \App\models\Example)->create([
     'username' => 'AliTavafi',
-    'password' => 'thisIsmyp@ssword',
+    'password' => 'passwordHash',
     'age' => 21
 ]);
 ```
@@ -275,7 +275,7 @@ This method updates a record with specific data. It accepts an array of `column 
 (new \App\models\Example)->where('username', '=', 'AliTavafi')
     ->update([
         'username' => 'Tavafi',
-        'password' => 'thisIsmynewp@ssword'
+        'password' => 'newPasswordHash'
     ]);
 ```
 #### orderBy()
