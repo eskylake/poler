@@ -241,11 +241,19 @@ This method returns all records.
 
 For example:
 ```php
-(new \App\models\Example)->select()->one();
+(new \App\models\Example)->select()
+    ->one();
+// or specific columns
+(new \App\models\Example)->select(['username', 'age'])
+    ->one();
 ```
 Or
 ```php
-(new \App\models\Example)->select()->all();
+(new \App\models\Example)->select()
+    ->all();
+// or specific columns
+(new \App\models\Example)->select(['username', 'age'])
+    ->all();
 ```
 #### where()
 This method apply conditions to the query. It has three main parameters:
