@@ -119,7 +119,7 @@ namespace App\views\example;
 All of the front codes must be written here :)
 ```
 #### Layouts
-Layouts are a special type of views that represent the common parts of multiple views. For example, the pages for most Web applications share the same page header and footer. While you can repeat the same page header and footer in every view, a better way is to do this once in a layout and embed the rendering result of a content view at an appropriate place in the layout.
+Based on [Yii 2.0 definition](https://www.yiiframework.com/doc/guide/2.0/en/structure-views#layouts "Yii 2.0 Layouts"), layouts are a special type of views that represent the common parts of multiple views. For example, the pages for most Web applications share the same page header and footer. While you can repeat the same page header and footer in every view, a better way is to do this once in a layout and embed the rendering result of a content view at an appropriate place in the layout.
 
 Creating layouts is similar to views, but they have to be created under `views/layouts/` directory.
 
