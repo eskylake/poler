@@ -137,6 +137,26 @@ namespace App\views\layouts;
 
 All of the front codes must be written here :)
 ```
+## Controllers
+Create your controller classes in `controllers/` directory. You must inherit from `\App\core\Controller` base class that it contains some useful methods such as `redirect()` and `render()`.
 
+There are two steps needed to create a controller:
+* Choose a name for your class :) e.g. `Example`
+* Concatenate it with `Controller` keyword
+
+
+Now we have `ExampleController` class. It looks like:
+```php
+<?php
+namespace App\controllers;
+
+use App\core\Controller;
+
+class ExampleController extends Controller
+{
+    protected $layout = 'Example';
+}
+```
+As you can see you can specify which layout must be loaded for all methods inside the controller by defining `$layout` property.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
