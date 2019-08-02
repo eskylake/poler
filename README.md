@@ -118,6 +118,24 @@ namespace App\views\example;
 
 All of the front codes must be written here :)
 ```
+#### Layouts
+Layouts are a special type of views that represent the common parts of multiple views. For example, the pages for most Web applications share the same page header and footer. While you can repeat the same page header and footer in every view, a better way is to do this once in a layout and embed the rendering result of a content view at an appropriate place in the layout.
+
+Creating layouts is similar to views, but they have to be created under `views/layouts/` directory.
+
+For example:
+```bash
+app/views
+└── layouts
+    └── Example.php
+```
+It looks like:
+```php
+<?php
+namespace App\views\layouts;
+?>
+
+All of the front codes must be written here :)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
