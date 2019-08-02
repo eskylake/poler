@@ -205,7 +205,7 @@ This method renders a specific view. It accepts two parameters:
 1. View file name
 2. Array of data you need in the view
 
-For example in our example class we have a hello method that renders `example/hello.php` view file whit 'Hello World' message:
+For example in our example class we have a hello method that renders `example/hello.php` view file with 'Hello World' message:
 ```php
 public function hello()
 {
