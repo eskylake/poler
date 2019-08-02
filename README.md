@@ -44,6 +44,34 @@ $dbHost = env('DB_HOST');
 
 Configure your web server's document / web root to be the  `public` directory. The `index.php` in this directory serves as the front controller for all HTTP requests entering your application.
 The main directory of the application is `app` with predefined structure.
+```bash
+app
+├── controllers
+│   ├── HomeController.php
+│   └── UserController.php
+├── core
+│   ├── Autoload.php
+│   ├── Controller.php
+│   ├── DB.php
+│   ├── Model.php
+│   ├── Path.php
+│   └── TokenGenerator.php
+├── interfaces
+│   └── DatabaseRepository.php
+├── models
+│   └── User.php
+├── repositories
+│   └── DatabaseRepository.php
+└── views
+    ├── home
+    │   └── index.php
+    ├── layouts
+    │   ├── Main.php
+    │   └── User.php
+    └── user
+        ├── login.php
+        └── register.php
+```
 
 ## Models
 Create your model classes in `models/` directory. You must inherit from `\App\core\Model` base class in order to validate or sanitize data, connect to database etc.
