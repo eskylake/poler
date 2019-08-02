@@ -191,6 +191,7 @@ It will fill the `$data` variable with the array you have passed to the view. No
 ```
 ## Queries
 There are some simple query methods that you have access into your models if your model extends `\App\core\Model` base class.
+
 #### create()
 This method creates new record for specific data passed as the first argument to this method. For example:
 ```php
@@ -198,6 +199,23 @@ This method creates new record for specific data passed as the first argument to
     'username' => 'AliTavafi',
     'password' => 'thisIsmyp@ssword'
 ]);
+```
+#### select()
+This method select all or specific columns from the table. You can pass the array of columns you want as the first argument.
+
+#### one()
+This method gets and returns only one record.
+
+#### all()
+This method gets and returns all records.
+
+For example:
+```php
+(new \App\models\Example)->select()->one();
+```
+Or
+```php
+(new \App\models\Example)->select()->all();
 ```
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
