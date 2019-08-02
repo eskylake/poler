@@ -284,5 +284,9 @@ For example:
 (new \App\models\Example)->getAllByColumn('age', 21, 'DESC');
 ```
 It will sort the records descending and return all records with age 21.
+
+## Feedback
+All bugs, feature requests, pull requests, feedback, etc., are welcome. [Create an issue](https://github.com/Tavafi/poler/issues).
+
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/Tavafi/poler/blob/master/LICENSE)
