@@ -231,7 +231,7 @@ For example:
 It will return the first record of the example table with 'AliTavafi' username.
 
 #### update()
-This method updates a record with specific data. It accepts an array of `column => value` data that updates table's column with the value. For example:
+This method updates a record with specific data. It accepts an array of `column => value` that updates table's column with the value. For example:
 ```php
 (new \App\models\Example)->where('username', '=', 'AliTavafi')
     ->update([
