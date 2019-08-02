@@ -239,5 +239,23 @@ This method updates a record with specific data. It accepts an array of `column 
         'password' => 'thisIsmynewp@ssword'
     ]);
 ```
+#### orderBy()
+This methods sorts query result based on a column and an order type.
+
+Order types:
+1. ASC (default type that means ascending)
+2. DESC (descending)
+
+It has two main parameters:
+```php
+->orderBy(column, 'ASC' or 'DESC');
+```
+For example:
+```php
+(new \App\models\Example)->where('age', '>=', 10)
+    ->orderBy('id', 'DESC')
+    ->select()
+    ->all();
+```
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
