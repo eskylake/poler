@@ -80,7 +80,7 @@ There are some predefined validation rules in the base model class that are list
 All you need is to define the `rules()` method in your model class that it has to return an array of rules. Each key of this array specifies the rule name that it contains an array of attributes to be validated.
 
 
-For example the example class has two attributes, username and password that are `string` and `required`:
+For example the example class has three attributes, username, password and age:
 ```php
 class Example extends Model
 {
@@ -97,6 +97,7 @@ class Example extends Model
                 'username',
                 'password'
             ],
+            'integer' => ['age']
         ];
     }
 }
