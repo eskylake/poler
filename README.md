@@ -279,7 +279,7 @@ This method updates a record with specific data. It accepts an array of `column 
     ]);
 ```
 #### orderBy()
-This methods sorts query result based on a column and an order type.
+This methods sorts the query result based on a column and an order type.
 
 Order types:
 1. ASC (default type that means ascending)
