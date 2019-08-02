@@ -198,7 +198,8 @@ This method creates new record for specific data passed as the first argument to
 ```php
 (new \App\models\Example)->create([
     'username' => 'AliTavafi',
-    'password' => 'thisIsmyp@ssword'
+    'password' => 'thisIsmyp@ssword',
+    'age' => 21
 ]);
 ```
 #### select()
@@ -253,7 +254,7 @@ It has two main parameters:
 ```
 For example:
 ```php
-(new \App\models\Example)->where('age', '>=', 10)
+(new \App\models\Example)->where('age', '>=', 20)
     ->orderBy('id', 'DESC')
     ->select()
     ->all();
