@@ -136,6 +136,7 @@ namespace App\views\layouts;
 ?>
 
 All of the front codes must be written here :)
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
