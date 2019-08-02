@@ -260,7 +260,6 @@ For example:
     ->all();
 ```
 
-There are two other methods that simplifies the select queries:
 #### getByColumn()
 This method returns only one record with specific condition. It has three main parameters:
 ```php
