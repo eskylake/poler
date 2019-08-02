@@ -220,7 +220,7 @@ Or
 (new \App\models\Example)->select()->all();
 ```
 #### where()
-This method apply a condition to the query. It has three main parameters:
+This method apply conditions to the query. It has three main parameters:
 ```php
 ->where(column, operator, value);
 ```
